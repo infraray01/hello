@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title"><h1>Image Loading System</h1></div>
+    
+    <div id="container">
+        <div id="left-side">
+            <div id="images-container">
+                <!-- Images will be dynamically inserted here -->
+            </div>
+            <button id="load-more">Load More</button>
+        </div>
+        <div id="right-side">
+            <div class="search-bar-container">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+            
+            <!-- Add content for recent posts and news here -->
+            <div class="recent-uploads">
+                <h3>Recent Uploads</h3>
+                <!-- Add some sample recent uploads -->
+                <div class="upload-item">
+                    <img src="img/18.jpg" alt="Recent Upload 1">
+                    <p>Recent Upload 1</p>
+                </div>
+                <div class="upload-item">
+                    <img src="img/19.jpg" alt="Recent Upload 2">
+                    <p>Recent Upload 2</p>
+                </div>
+                <!-- Add more recent uploads as needed -->
+            </div>
+            <div class="comments">
+                <h3>Comments</h3>
+                <p>Comment 1: Great images!</p>
+                <p>Comment 2: Loved it!</p>
+                <!-- Add more comments as needed -->
+            </div>
+            <div class="top-uploads">
+                <h3>Top Uploads</h3>
+                <!-- Add some sample top uploads -->
+                <div class="upload-item">
+                    <img src="img/20.jpg" alt="Top Upload 1">
+                    <p>Top Upload 1</p>
+                </div>
+                <div class="upload-item">
+                    <img src="img/21.jpg" alt="Top Upload 2">
+                    <p>Top Upload 2</p>
+                </div>
+                <!-- Add more top uploads as needed -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact form -->
+    <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
